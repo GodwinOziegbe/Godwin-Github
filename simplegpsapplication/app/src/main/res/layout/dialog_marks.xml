@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="392dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="338dp">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new Tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accident" />
+
+        <Button
+            android:id="@+id/roadCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Road Construction" />
+
+        <Button
+            android:id="@+id/roadClosed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Road Closed" />
+
+        <Button
+            android:id="@+id/heavyTraff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heavy Traffic" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951283650341",
+    "project_id": "simplegpsapplication",
+    "storage_bucket": "simplegpsapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951283650341:android:049d022e8ccdc801c394cc",
+        "android_client_info": {
+          "package_name": "ya.examensarbete.simplegpsapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951283650341-81jnu4i7k0qcksv6n3c8not96ibkikr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKLKiuIe8kuiRqvSUZY2Dxkf983ne0U1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951283650341-81jnu4i7k0qcksv6n3c8not96ibkikr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
