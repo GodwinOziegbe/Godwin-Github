@@ -1,0 +1,421 @@
+body {
+  /* background-color: pink;*/
+  border-top: 20px solid grey;
+  border-left: 5px solid grey;
+  border-right: 5px solid grey;
+  border-bottom: 10px solid grey;
+  padding: 20px;
+  padding-bottom: 800px;
+}
+.heading {
+  text-align: center;
+  font-style: oblique;
+}
+.heading1 {
+  text-align: center;
+  font-style: oblique;
+  color:blue
+}
+#homePage {
+  display: none;
+}
+
+ul {
+  display: center;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: grey;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 34px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: darkgray;
+}
+.active {
+  background-color: #4caf50;
+}
+
+#myLogin {
+  display: none;
+  text-align: center;
+}
+#myLoginForm {
+  display: none;
+  border: 2px solid black;
+  text-align: center;
+  width: 20%;
+  margin-left: 700px;
+  margin-right: 700px;
+  padding: 10px;
+  padding-top: 15px;
+  display: block;
+}
+#logout {
+  display: none;
+  text-align: center;
+  margin-left: 600px;
+}
+#ourCarsHeading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 4px;
+}
+/*#ourCars {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}*/
+
+table {
+  display: none;
+  font-family: arial, sans-serif;
+
+  margin-left: 550px;
+  margin-right: 550px;
+  width: 40%;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd;*/
+  text-align: left;
+  padding: 8px;
+  /*border: 2px solid black;*/
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+#table1 {
+  display: none;
+  text-align: center;
+}
+#table2{
+  display: none;
+}
+.table3{
+  text-align: center;
+  display: none;
+}
+#carImage {
+  display: none;
+  margin-left: 600px;
+  float: left;
+}
+#carDetails {
+  display: none;
+  margin-left: 800px;
+}
+#myOrdersHeading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}
+#myOrders {
+  display: none;
+  /*border: 2px solid black;*/
+  text-align: left;
+  width: 20%;
+  margin-left: 800px;
+  /* margin-right: 400px;*/
+  padding: 10px;
+  padding-top: 15px;
+  position: absolute;
+}
+
+#ourCustomersHeading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 820px;
+  
+  height: 10%;
+}
+#ourCustomers {
+  display: none;
+  /*border: 2px solid black;*/
+  text-align: left;
+  width: 20%;
+  margin-left: 700px;
+  /* margin-right: 400px;*/
+  padding: 10px;
+  padding-top: 15px;
+  
+}
+
+/*order page*/
+#orderNrHeading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  /*margin-left: 600px;*/
+
+}
+#customerIdHeading {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+/*margin-left: 600px;*/
+  
+}
+#orderPage {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 600px;
+  position: absolute;
+}
+#ordernr{
+  display: none;
+  text-align: center;
+  font-weight: bold;
+ /*margin-left: 600px;*/
+}
+
+#returnDate{
+  display: none;
+  text-align: center;
+  font-weight: bold;
+ /*margin-left: 600px;*/
+}
+#rentDate{
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  /*margin-left: 600px;*/
+}
+
+
+#updateOrder{
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 900px;
+}
+#carName{
+  display: none;
+  text-align: center;
+  font-weight: bold
+}
+#carType{
+  display: none;
+  text-align: center;
+  font-weight: bold
+}
+#carModel{
+  display: none;
+  text-align: center;
+  font-weight: bold
+}
+#custoId{
+  display: none;
+  text-align: center;
+  font-weight: bold
+}
+#carTypeText{
+  display: none;
+  text-align: center;
+  font-weight: bold
+}
+
+/*booking details*/
+#myForm {
+  display: none;
+  border: 2px solid black;
+  text-align: center;
+  width: 20%;
+  margin-left: 700px;
+  margin-right: 700px;
+  padding: 10px;
+  padding-top: 15px;
+  display: block;
+}
+#ourCarsHeading {
+  display: none;
+}
+#ourCars {
+  display: none;
+  /*border: 2px solid black;*/
+  text-align: left;
+  width: 20%;
+  margin-left: 720px;
+  /* margin-right: 400px;*/
+  padding: 10px;
+  padding-top: 15px;
+}
+#bookACar {
+  display: none;
+  text-align: center;
+}
+
+#updateCar{
+  display: none;
+  /*border: 2px solid black;*/
+  text-align: left;
+  width: 20%;
+  margin-left: 720px;
+  /* margin-right: 400px;*/
+  padding: 10px;
+  padding-top: 15px;
+  position: absolute;
+}
+#addCar{
+  display: none;
+  /*border: 2px solid black;*/
+  text-align: left;
+  width: 20%;
+  margin-left: 720px;
+  /* margin-right: 400px;*/
+  padding: 10px;
+  padding-top: 15px;
+  position: absolute;
+}
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+#loginDiv {
+  display: inline;
+}
+#outputDiv {
+  display: inline;
+}
+
+#carnametDiv {
+  display: inline;
+}
+#cartypeDiv {
+  display: inline;
+}
+#carnametDiv {
+  display: inline;
+}
+#ourCarsOutput {
+  display: inline;
+  text-align: center;
+}
+#mytable1 {
+  display: none;
+}
+#chooseCarButton {
+  display: none;
+  text-align: center;
+}
+#mydiv1 {
+  display: none;
+  text-align: center;
+}
+
+#mydiv2 {
+  text-align: center;
+  display: none;
+}
+#car {
+  display: inline;
+  text-align: center;
+}
+#carId {
+  text-align: center;
+  display: none;
+}
+.selectCar {
+  display: block;
+}
+#customerId {
+  text-align: center;
+  display: none;
+}
+#loginMessage {
+  text-align: center;
+  display: none;
+  color: blue;
+}
+
+#rentPrice {
+  text-align: center;
+  display: none;
+}
+
+#rentDays {
+  text-align: center;
+  display: none;
+}
+
+#myrental {
+  text-align: center;
+  display: none;
+}
+
+#viewOrder {
+  text-align: center;
+  display: none;
+}
+
+#allCars{
+  text-align: center;
+  display: none;
+}
+#loggedinUsername{
+  display: none;
+}
+
+#loggedinPassword{
+  display: none;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>car rental</title>
+   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/carrental.js"></script>
+  </head>
+  <body>
+    
+    <!--menu-->
+    <p class="heading">the best car hire business in town!</p>
+    <p class="heading1">Admin Web!</p>
+    <ul>
+      <li onclick="homePage()"><a class="active" href="#homePage">Home/refresh</a></li>
+
+      <li><a  onclick="userLogin()" href="#myLogin">Login</a></li>
+      <li><a onclick="ourCarsAdmin()" href="#ourCarsHeading">Our cars</a></li>
+      <li><a onclick="ourCustomers()" href="#ourCustomersHeading">Our customers</a></li>
+      <li><a onclick="addCar()" href="#addCar">Add car</a></li>
+      <li><a  onclick="allOrders()" href="customerweb.html">Customer-web</a></li>
+      <li><a a onclick="logOut()" href="#logout">logout</a></li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--home page-->
+    <p id ="homePage"></p>
+
+    <!--
+    <div id= "gettest">
+      <form action="http://localhost:8090/api/v1/admin/getuser" method="get">
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  -->
+       <p></p>
+    <!--login-->
+      <div id= "myLogin">
+       <form action="customer-web.html" id="myLoginForm" method ="post">
+         <label for="username">Username:</label>
+         <br />
+         <input type="text" id="username" name="username" />
+         <p style="display: none; visibility: hidden;">hiden space</p>
+        
+         <p></p>
+   
+         <label for="password">Password:</label>
+         <br />
+         <input type="password" id="password" name="password" />
+         <p style="display: none; visibility: hidden;">hiden space</p>
+                  
+         <p></p>
+          <button   id="loginbutton"  type="button">Login</button>
+         <!--<input style="margin-left: 300px;" type="submit" value="book car" />-->
+         <!--onclick="handleLoginDetails(event)"-->
+       </form>
+       </div>
+
+       <form action="adminweb.html" id="updateCar" method ="post">
+        <p><b>Enter new details:</b></p><br/>
+        <label for="dailyRentPrice">Daily rent price:</label>
+        <br />
+        <input type="text" id="dailyRentPrice" name="dailyRentPrice" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       <p></p> 
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" id="name" name="name" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+                 
+        <p></p>
+
+        <label for="type">Type:</label>
+        <br />
+        <input type="text" id="type" name="type" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       
+        <p></p>
+        <label for="model">Model:</label>
+        <br />
+        <input type="text" id="model" name="model" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       
+        <p></p>
+        <label for="isAvailable">isAvailable:</label>
+        <br />
+        <input type="text" id="isAvailable" name="isAvailable" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+                 
+        <p></p>
+         <button   id="update"  type="button">update</button>
+        <!--<input style="margin-left: 300px;" type="submit" value="book car" />-->
+        <!--onclick="handleLoginDetails(event)"-->
+        
+      </form>
+
+    <!---->
+    
+      <form action="adminweb.html" id="addCar" method ="post">
+        <p><b>Enter car details:</b></p><br/>
+        <label for="dailyRent">Daily rent price:</label>
+        <br />
+        <input type="text" id="dailyRent" name="dailyRent" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       <p></p> 
+        <label for="nameofcar">Name:</label>
+        <br />
+        <input type="text" id="nameofcar" name="nameofcar" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+                 
+        <p></p>
+
+        <label for="typeofcar">Type:</label>
+        <br />
+        <input type="text" id="type" name="typeofcar" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       
+        <p></p>
+        <label for="modelofcar">Model:</label>
+        <br />
+        <input type="text" id="modelofcar" name="modelofcar" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+       
+        <p></p>
+        <label for="isAvailableofcar">isAvailable:</label>
+        <br />
+        <input type="text" id="isAvailableofcar" name="isAvailableofcar" />
+        <p style="display: none; visibility: hidden;">hiden space</p>
+                 
+        <p></p>
+         <button id="addNew" type="button">add car</button>
+        <!--<input style="margin-left: 300px;" type="submit" value="book car" />-->
+        <!--onclick="handleLoginDetails(event)"-->
+        </form>
+    <!--logout-->
+    <div id="logout">
+      
+    </div>
+
+<!--our cars heading-->
+    <div  id="ourCarsHeading">
+      <p>Available cars</p>
+      <p>Name &nbsp; &nbsp; &nbsp;     Type &nbsp; &nbsp; &nbsp;      Model</p>
+    </div>
+<!--our cars -->
+    <table id="ourCars" > 
+     </table>
+
+<div id="ourCarsOutput">
+  
+</div><br>
+<p id="outputDiv"></p>
+
+    <!--our Customers -->
+    
+    <div id="ourCustomersHeading">
+      <p>Customers</p>
+      <p> Id &nbsp; &nbsp; &nbsp;FirstName &nbsp; &nbsp; &nbsp; Lastname  &nbsp; &nbsp; &nbsp;Email</p>
+    </div>
+      <table  id="ourCustomers">
+       </table>
+    <p id="table2"></p>
+    
+    
+
+
+  </body>
+</html>

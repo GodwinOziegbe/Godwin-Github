@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>car rental</title>
+   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/carrental.js"></script>
+  </head>
+  <body>
+    
+    <!--menu-->
+    <p class="heading">the best car hire business in town!</p>
+    <p class="heading1">Customer Web!</p>
+    <ul>
+      <li onclick="homePage()"><a class="active" href="#homePage">Home/refresh</a></li>
+
+      <li><a  onclick="userLogin()" href="#myLogin">Login</a></li>
+      <li><a onclick="ourCars()" href="#ourCarsHeading">Our cars</a></li>
+      <li><a onclick="bookaCar()" href="#bookaCar">Book a car</a></li>
+      <li><a onclick="myOrders()" href="#myOrdersHeading">My orders</a></li>
+      <li><a  onclick="allOrders()" href="adminweb.html">Admin</a></li>
+      <li><a a onclick="logOut()" href="#logout">logout</a></li>
+    </ul>
+    
+    <br />
+    <!--home page-->
+    <p id ="homePage"></p>
+          <p></p>
+    <!--login-->
+      <div id= "myLogin">
+       <form action="customer-web.html" id="myLoginForm" method ="post">
+         <label for="username">Username:</label>
+         <br />
+         <input type="text" id="username" name="username" />
+         <p style="display: none; visibility: hidden;">hiden space</p>
+        
+         <p></p>
+   
+         <label for="password">Password:</label>
+         <br />
+         <input type="password" id="password" name="password" />
+         <p style="display: none; visibility: hidden;">hiden space</p>
+                  
+         <p></p>
+          <button   id="loginbutton"  type="button">Login</button>
+        
+       </form>
+       </div>
+
+    </div>
+    <!--logout-->
+    <div id="logout">
+      
+    </div>
+
+<!--our cars heading-->
+    <div  id="ourCarsHeading">
+      <p>Available cars</p>
+      <p>Name &nbsp; &nbsp; &nbsp;     Type &nbsp; &nbsp; &nbsp;      Model</p>
+    </div>
+<!--our cars -->
+    <table id="ourCars" > 
+     </table>
+
+<div id="ourCarsOutput">
+  
+</div><br>
+<p id="outputDiv"></p>
+    <!--book a car page-->
+      <div id= "bookaCar"  style="display: none;">
+     <p style="margin-left: 850px;">Book a car</p> 
+    <form  action="carrental.html" id="myForm" onsubmit="handleForm(event)">
+      <label for="rentaldate">rental date:</label>
+      <br />
+      <input type="date" id="rentaldate" name="rentaldate" />
+      <p style="display: none; visibility: hidden;">hiden space</p>
+     
+      <p></p>
+
+      <label for="returndate">return date:</label>
+      <br />
+      <input type="date" id="returndate" name="returndate" />
+      <p style="display: none; visibility: hidden;">hiden space</p>
+      
+      <p id="carSelected">car selected:</p>
+      <p id="car"style="display: inline;"></p>
+      <p id="carId"></p>
+      <p id="mydiv2"></p>
+      <p></p>
+      <a class ="selectCar"onclick="ourCars()" href="#ourCarsHeading">select a Car</a></li>
+      
+      <p></p>
+      
+      <button  type="submit">Rent car</button>
+      </form>
+    </div>
+    <p id="customerId"></p>
+    <p id="rentDays"></p>
+    <p id="rentPrice"></p>
+    <p id="myrental"></p>
+    <a id="loginMessage" onclick="userlogin()"href="#myLogin">you havent logged in or selected a car. Click to login</a>
+    
+    <!--my orders -->
+    
+    <div id="myOrdersHeading">
+      <p>My orders</p>
+      <p>Order Id &nbsp; &nbsp; &nbsp;     Rented date</p>
+    </div>
+      <table  id="myOrders">
+       </table>
+    <p id="table1"></p>
+    <p id="table2"></p>
+    
+    <!--view order page(order page)-->
+    
+    <div id="orderPage">
+    <span id="orderNrHeading">Order nr:&nbsp;&nbsp;&nbsp;<span id="ordernr"></span></span><br/><br/>
+    -----------------------------<br/>
+    <span id="customerIdHeading">Customer Id:&nbsp;&nbsp;&nbsp; <span id="custoId"></span></span><br/><br/>
+    -----------------------------<br/>
+    <span id="returnDateText">return date:&nbsp;&nbsp;&nbsp;</span><span id="returnDate"></span><br/><br/>
+    -----------------------------<br/>
+    <span id="rentDateText">rent date:&nbsp;&nbsp;&nbsp;<span id="rentDate"></span></span><br/><br/>
+    -----------------------------<br/>
+    <span id="totalPriceText">total price:&nbsp;&nbsp;&nbsp;<span id="totalPrice"></span></span><br/><br/>
+    -----------------------------<br/>
+    <span id="carNameText">Car Name:&nbsp;&nbsp;&nbsp;<span id="carName"></span></span><br/><br/>
+   ------------------------------<br/>
+    
+    <span id="carModelText">Car Model:&nbsp;&nbsp;&nbsp;</span></span><span id="carModel"><br/>
+      ---------------------------<br/>
+      <span id="carTypeText">Car Model:&nbsp;&nbsp;&nbsp;</span></span><span id="carModel"><br/>
+      <span id="carTypeText">Car Type:&nbsp;&nbsp;&nbsp;<span id="carType"></span></span><br/>
+      
+      
+    </div>
+    <br />
+    <button id= "updateOrder" type="button" onclick="updateOrder()">update order</button>
+ 
+
+    <br />
+    
+    <table id="orderPage1">
+      <tr>
+        <th style="border: 1px solid #dddddd;">
+          Order date
+        </th>
+        <th style="border: 1px solid #dddddd;">Renting date</th>
+        <th style="border: 1px solid #dddddd;">Return date</th>
+        <th style="border: 1px solid #dddddd;">Car Id</th>
+      </tr>
+
+      <tr>
+        <td>
+          20211024
+        </td>
+        <td>20211030</td>
+        <td>20211104</td>
+        <td>123</td>
+      </tr>
+    </table>
+    <p></p>
+    <p></p>
+    <input
+      style="display: none; margin-left: 1200px;"
+      type="submit"
+      value="Edit order"
+    />
+
+    <!--updating order page-->
+    <h3 style="display: none; text-align: center;">Updating order details</h3>
+    <div style="display: none;" id="orderNrHeading">
+      <p>Order nr:</p>
+    </div>
+    <br />
+    <div style="display: none;" id="customerIdHeading">
+      <p>Customer Id:</p>
+    </div>
+    <form style="display: none; width: 30%; height: 300px;" id="myForm">
+      <label for="rentaldate">new renting date:</label>
+      <br />
+      <input type="date" id="rentaldate" name="rentaldate" />
+      <p style="display: none; visibility: hidden;">hiden space</p>
+      <p></p>
+
+      <label for="returndate">new return date:</label>
+      <br />
+      <input type="date" id="returndate" name="returndate" />
+      <p style="display: none; visibility: hidden;">hiden space</p>
+      <p></p>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">new car</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <p style="display: none; visibility: hidden;">hiden space</p>
+      <p></p>
+      <input style="margin-left: 300px;" type="submit" value="save" />
+    </form>
+<div id="chooseCarButton">
+    <button  onclick()="chooseCarFunction()">choose Car</button>
+    </div>
+    <div id="mydiv1">formy</div>
+  </body>
+</html>
