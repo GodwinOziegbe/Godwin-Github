@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Order Information System</title>
+</head>
+
+<h:body>
+<h:form>
+    <h2>Order Information System</h2>
+        <table>
+    <tr>
+        <td>Customer Email:</td>
+        <td>
+          <h:inputText label="Email"
+                       id="email" value="#{orderJSFBean.email}"
+                       required="true"/>
+                       <h:message for="email" style="color: red"/>
+        </td>
+      </tr>    
+      <tr>
+        <td>Product ID:</td>
+        <td>
+          <h:inputText label="Product ID"
+                       id="productid" value="#{orderJSFBean.productID}"
+                       required="true"/>
+                       <h:message for="productid" style="color: red"/>
+        </td>
+      </tr>
+      <tr>
+        <td>Quantity:</td>
+        <td>
+          <h:inputText label="Quantity"
+                       id="quantity" value="#{orderJSFBean.quantity}"
+                       required="true"/>
+                       <h:message for="quantity" style="color: red"/>
+        </td>
+      </tr>
+      <h:commandButton value="Submit" action="#{orderJSFBean.addOrder}"/> 
+</table>
+</h:form>
+</h:body>
+</html>

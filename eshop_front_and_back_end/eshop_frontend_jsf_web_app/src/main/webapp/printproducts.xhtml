@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+ <h:head>
+Dashboard
+</h:head>
+<body> 
+         
+      <h4>Business Information System</h4>
+     
+    <h:outputText value="#{productJSFBean.errorMSG}" rendered="#{productJSFBean.errorMSG != null}" style="color:blue;"/> 
+     
+      <h2>Product List</h2>
+		
+		<h:dataTable value="#{productJSFBean.productList}" var="product" >
+			
+			<h:column>
+			<f:facet name="header">productID</f:facet>	
+				#{product.productID}
+			</h:column>
+			
+			<h:column>
+			<f:facet name="header">product Name</f:facet>	
+				#{product.productName}
+			</h:column>
+			
+			<h:column>
+			<f:facet name="header">&nbsp;&nbsp;Unit Price</f:facet>	
+				&nbsp;&nbsp;#{product.unitPrice}
+			</h:column>
+			
+			<h:column>
+			<f:facet name="header">&nbsp; Date In Stock</f:facet>	
+				&nbsp;#{product.dateInStock}
+			</h:column>
+			
+			
+		</h:dataTable>
+	
+  </body> 
+</html>

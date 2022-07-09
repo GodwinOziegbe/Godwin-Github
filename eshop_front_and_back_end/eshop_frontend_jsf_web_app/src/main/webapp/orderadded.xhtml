@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<body> 
+    <h2>Congratulations! your order has been added</h2> 
+      
+      
+      <h:outputText value="#{orderJSFBean.errorMSG}" rendered="#{orderJSFBean.errorMSG != null}" style="color:red;"/> 
+      <h:outputText value="#{productJSFBean.errorMSG}" rendered="#{orderJSFBean.errorMSG != null}" style="color:red;"/>
+      
+      <h:form>  
+ 
+ 			 <h:commandButton value="Get products" action="#{productJSFBean.getProducts}"/>
+ 			  <h:commandButton value="Add products" action="#{productJSFBean.addProducts}"/>
+ 			   <h:commandButton value="Add order" action="#{orderJSFBean.makeOrder}"/>
+ 			    <h:commandButton value="Get orders" action="#{orderJSFBean.getOrders}"/>
+  			 
+</h:form>
+      
+  </body> 
+</html>

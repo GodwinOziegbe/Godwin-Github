@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:f="http://java.sun.com/jsf/core" 
+      xmlns:h="http://java.sun.com/jsf/html"> 
+  <body> 
+    <h2>Welcome admin !</h2> 
+      You are successfully logged in 
+      
+      <h:outputText value="#{productJSFBean.errorMSG}" rendered="#{productJSFBean.errorMSG != null}" style="color:red;"/> 
+      <h:form>  
+ 
+ 			 <h:commandButton value="Get products" action="#{productJSFBean.getProducts}"/>
+ 			  <h:commandButton value="Add products" action="#{productJSFBean.addProducts}"/>
+ 			   <h:commandButton value="Add order" action="#{orderJSFBean.makeOrder}"/>
+ 			    <h:commandButton value="Get orders" action="#{orderJSFBean.getOrders}"/>
+  			 
+</h:form>
+      
+  </body> 
+</html> 
