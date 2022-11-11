@@ -1,0 +1,110 @@
+/* *{
+    border: 1px blue solid;
+} */
+
+body{
+    background-color: whitesmoke;    
+}
+
+.container{
+    width: 1100px;
+    height: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    background-color: lightgrey;
+    border:1px solid #8f8f8f;    
+}
+
+.header {
+    font-family:Arial;
+    font-size: 25px;
+    padding-left: 43px;
+    padding-right: 43px;
+    color: #252525;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic {
+    padding-top: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.pic img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 0.8px #000000);
+}
+
+.menu p {
+    padding-left: 30px;       
+}
+
+.menu p:hover {
+    text-shadow: 0px 0px 2px #000000;
+    cursor: pointer;
+}
+
+.menu {    
+    display: flex;
+}
+
+.chartContainer {
+    display: flex;    
+    flex-flow: wrap;
+    justify-content: center;
+    padding-top: 20px;    
+}
+
+.sessionChart{
+    height: 250px;
+    width: 300;
+    padding: 5px;
+}
+
+.revenueChart{
+    height: 250px;
+    width: 300;
+    padding: 5px;    
+}
+
+.sessionAverage{
+    height: 250px;
+    width: 300;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.revenueAverage{
+    height: 250px;
+    width: 300;
+    padding: 5px;
+}
+
+#mySessionChart{
+    border: 1px solid lightgray;        
+    -webkit-box-shadow: 0px 2px 5px 0px #000000;
+    box-shadow: 0px 2px 5px 0px #000000;
+    background-color: whitesmoke;
+}
+
+#myRevenueChart{
+    border: 1px solid lightgray;    
+    -webkit-box-shadow: 0px 2px 5px 0px #000000;
+    box-shadow: 0px 2px 5px 0px #000000;
+    background-color: whitesmoke;
+}
+
+#myAverageSessionChart{
+    border: 1px solid lightgray;        
+    -webkit-box-shadow: 0px 2px 5px 0px #000000;
+    box-shadow: 0px 2px 5px 0px #000000;
+    background-color: whitesmoke;
+}
+
+#myAverageRevenueChart{
+    border: 1px solid lightgray;    
+    -webkit-box-shadow: 0px 2px 5px 0px #000000;
+    box-shadow: 0px 2px 5px 0px #000000;
+    background-color: whitesmoke;
+}

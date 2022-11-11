@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="picker.css" />
+    <title>Fetch data from database</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="pic">
+          <img id="brathPic" src="https://cdn-bfhib.nitrocdn.com/CkPLMwddmDNfJYGWYUkWIEmoYzGxqfVI/assets/static/optimized/rev-1e5ae3c/wp-content/themes/brath21/img/brath-logo-black_128px.png"/>
+        </div>
+        <div class="menu">
+          <!-- <p id="total">Total</p> -->
+          <p id="cpc">CPC</p>
+          <p id="direct">Direct</p>
+          <p id="organic">Organic</p>
+          <p id="referral">Referral</p>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="chartContainer">
+          <div class="sessionChart">
+            <canvas id="mySessionChart" height="250" width="500"> </canvas>
+          </div>
+          <div class="revenueChart">
+            <canvas id="myRevenueChart" height="250" width="500"> </canvas>
+          </div>
+          <div class="sessionAverage">
+            <canvas id="myAverageSessionChart" height="250" width="500"> </canvas>
+          </div>
+          <div class="revenueAverage">
+            <canvas id="myAverageRevenueChart" height="250" width="500"> </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="pickContainer">
+        <div class="pickId">
+          <div class="inputBox">
+
+            <button onclick="window.location.href= 'http://localhost:8080/logout'">Logout</button>
+          </div>
+        </div>
+        <div class="pickDates">
+            <div class="datePickerStart">
+              <label for="start">Start date:</label>
+              <input type="date" id="datePickerFrom" name="trip-start"
+        min="2018-01-01" max="2050-12-31">
+            </div>
+            <div class="datePickerEnd">
+              <label for="start">End date:</label>
+              <input type="date" id="datePickerTo" name="trip-start"
+        min="2018-01-01" max="2050-12-31">
+            </div>
+            <div class="getButton">
+              <button id="getBtn">Get Data</button>
+            </div>
+        </div>
+      </div>
+    </div>   
+    
+    
+    <script src="submitButton.js"></script>
+    <script src="pickDate.js"></script>
+    <script src="cpcFunctions.js"></script>
+    <script src="directFunctions.js"></script>
+    <script src="organicFunctions.js"></script>
+    <script src="referralFunctions.js"></script>
+    <script src="welcomeChart.js"></script>    
+    <script src="main.js"></script>
+  </body>
+</html>
