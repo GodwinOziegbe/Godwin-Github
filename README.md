@@ -1,4 +1,4 @@
-**currently upgrading my github projects may not show correctly untill the upgrade is hopefully completed within 24 hours*****
+Seo/Sem analyser in microservice pattern and Rest api backend using java and Google anaylytics, javascript frontend
 
 CarRentals front and backend. JAVA, Spring, HTML,CSS,JavaScript, API application. 
 
