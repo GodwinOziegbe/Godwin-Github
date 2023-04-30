@@ -1,0 +1,44 @@
+gitpwd for prompt?
+
+GitBash
+Git bash here- for repository
+Git init
+git status
+ls -la for dir
+
+typscript programming language look up?
+git commit -m"message"
+
+mvn package install
+mvn wildfly:deploy
+mvn wildfly:undeploy
+
+git init .
+git add .
+git commit.
+git status.
+git config.
+git branch.
+git checkout.
+git merge.
+
+vi (directory)
+
+java -cp liveEJBClient-0.0.1-SNAPSHOT.jar com.yaja.ejb.liveHelloClient
+
+(esq):q! (enter)
+
+$ curl -H "Accept: application/json" http://localhost:8080/ESHOP/eshopapp/eshop/products
+
+jakartaee-webapp-quickstart-archetype
+
+git push -u "url" master
+
+git switch -c new-branch    creates a new branch called "new-branch" in the local repository and switches automatically to this branch
+
+git push -u "url"	pushes the commit to remote repository creating the new branch just created, automatically in the repo.
+
+git branch -a   lists all the branches in the local repo
+
+git checkout new-branch   switches branch to new-branch as the root
+
